@@ -1,0 +1,67 @@
+#floatingWindow {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: #7a87f5;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border-radius: 10px;
+}
+
+.tempo_trabalho_div {
+  margin-bottom: -20px;
+}
+
+.tempo_descanso_div {
+  margin-top: -30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+.tempo_descanso_div,
+.tempo_trabalho_div {
+  text-align: center;
+  display: flex;
+}
+
+.tempo_descanso_div > *,
+.tempo_trabalho_div > * {
+  padding-right: 10px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: auto 7px;
+}
+
+.hidden {
+  display: none;
+}
+
+.clock {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  place-items: center;
+}
