@@ -5,30 +5,35 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <div id="floatingWindow">
-      <h2 class="title">Pomodoro Clock</h2>
-      <div class="hidden clock">
-        <div class="clock_count"></div>
-      </div>
-      <div class="selecionar_tempos">
-        <div class="tempo_trabalho_div">
-          <p>Tempo de trabalho (min)</p>
-          <p contenteditable="true" id="work_time">25</p>
+    <div class="container">
+      <div id="floatingWindow">
+        <h2 class="title">Pomodoro Clock</h2>
+        <div class="hidden clock">
+          <div class="clock_count"></div>
         </div>
-        <div class="tempo_descanso_div">
-          <p>Tempo de Descanso (min)</p>
-          <p contenteditable="true" id="rest_time">5</p>
+        <div class="selecionar_tempos">
+          <div class="tempo_trabalho_div">
+            <p>Tempo de trabalho (min)</p>
+            <p contenteditable="true" id="work_time">25</p>
+          </div>
+          <div class="tempo_descanso_div">
+            <p>Tempo de Descanso (min)</p>
+            <p contenteditable="true" id="rest_time">5</p>
+          </div>
         </div>
-      </div>
 
-      <div class="btns">
-        <button class="btn" id="start_btn">Start</button>
-        <button class="btn hidden" id="reset_btn">Reset</button>
-        <button class="btn hidden" id="pause_btn">Pause</button>
-        <button class="btn hidden" id="continue_btn">Continue</button>
+        <div class="btns">
+          <div>
+            <button class="btn" id="start_btn">Start</button>
+            <button class="btn hidden" id="restart_btn">Restart</button>
+            <button class="btn hidden" id="pause_btn">Pause</button>
+            <button class="btn hidden" id="continue_btn">Continue</button>
+          </div>
+
+          <button class="btn hidden" id="finish_button">Finish</button>
+        </div>
       </div>
     </div>
-
     <script src="content.js"></script>
   </body>
 </html>
